@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const Closet = require("./closet-models.js");
+const Closet = require("../models/closet-models.js");
 
 
 //Get all Categories

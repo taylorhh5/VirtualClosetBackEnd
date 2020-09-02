@@ -26,8 +26,8 @@ function getCategoryById(id) {
 }
 
 //Add Category
-function addCategory(move) {
-  return db("category").insert(move, "id");
+function addCategory(item) {
+  return db("category").insert(item, "id");
 }
 
 //Edit Category
@@ -56,8 +56,8 @@ function getClothingById(id) {
 }
 
 //Add clothing
-function addClothing(move) {
-  return db("clothing").insert(move, "id");
+function addClothing(item) {
+  return db("clothing").insert(item, "id");
 }
 
 //Edit clothing
@@ -72,3 +72,4 @@ function editClothing(id, changes) {
 function removeClothing(id) {
   return db("clothing").where("id", id).del();
 }
+

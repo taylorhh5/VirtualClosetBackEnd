@@ -28,6 +28,8 @@ exports.up = function(knex) {
         tbl.text("description")
         tbl.string("image_url", 500)
         tbl.string("type", 500)
+        tbl.date("date")
+
   
         
         tbl.integer("user_id")
